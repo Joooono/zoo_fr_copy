@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+header nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  font-size: 32px;
+  text-transform: lowercase;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+}
+header nav ul:hover {
+  background-color: gainsboro;
+}
+header nav ul li {
+  cursor: pointer;
+  margin-right: 50px;
+}
+header nav ul:first-child:hover li:not(:first-child) {
+  color: white !important;
+}
+header nav ul:first-child li:first-child {
+  margin-right: 120px;
+}
+header nav ul:first-child li:not(:first-child) {
+  color: gainsboro;
+}
+
+main {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+main article {
+  cursor: pointer;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 10fr 0.8fr;
+}
+main article img {
+  min-width: 100%;
+  height: 100%;
+}
+main article div {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+main article div h3 {
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */
